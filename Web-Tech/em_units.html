@@ -1,0 +1,25 @@
+<!-- em- RELATIVE, depends on parent
+1em = 16px default browser style 
+1em = base value (16px)*number (1)=16px 
+2em = base value (16px)*number (2)=32px 
+2em = base value (10px)*number (2)=20px  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>em units</title>
+    <style>
+        .absolute
+        {
+            font-size: 32px;
+        }
+        .relative{
+            font-size: 2em;
+        }
+    </style>
+  </head>
+  <body>
+    <h3 class="relative">Some Text</h3>
+    <h3 class="absolute">Some Text</h3>
+  </body>
+</html>

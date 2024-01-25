@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Css Position2</title>
+<style>
+    #parent
+    {
+        width: 500px;
+        height: 500px;
+        background-color: gray;
+        border: 2px double black;
+        position: relative;
+        left: 300px;
+    }
+    #child1
+    {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 1px solid green;
+        margin: 5px;
+        position: absolute;
+        left: 200px;
+    }
+    #child2
+    {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        border: 1px solid yellow;
+        margin: 5px;
+        position: absolute;
+        left: 200px;
+        top: 200px;
+    }
+</style>
+</head>
+<body>
+    <!--Absolute value-->
+    <div id="parent">
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+</body>
+</html>

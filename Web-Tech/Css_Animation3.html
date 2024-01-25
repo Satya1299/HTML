@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Animation3</title>
+    <style>
+        body {
+            background-color: black;
+            color: ghostwhite;
+            text-align: center;
+            margin: 300px 0 0 0;
+        }
+
+        span {
+            color: orange;
+            animation-name: anime;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border: 2px solid white;
+            position: relative;
+
+        }
+
+        span:nth-child(0) {
+            animation-delay: 1s;
+        }
+
+        span:nth-child(1) {
+            animation-delay: 2s;
+        }
+
+        span:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        span:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        span:nth-child(4) {
+            animation-delay: 5s;
+        }
+
+        span:nth-child(5) {
+            animation-delay: 6s;
+        }
+
+        span:nth-child(6) {
+            animation-delay: 7s;
+        }
+
+        span:nth-child(7) {
+            animation-delay: 8s;
+        }
+
+        @keyframes anime {
+            from {
+                transform: scale(1, 1);
+                filter: hue-rotate(0deg);
+                top: 0px;
+            }
+
+            to {
+                transform: scale(3, 3);
+                filter: hue-rotate(360deg);
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            <span>J</span>
+            <span>S</span>
+            <span>P</span>
+            <span>I</span>
+            <span>D</span>
+            <span>E</span>
+            <span>R</span>
+        </h1>
+    </div>
+</body>
+
+</html>
